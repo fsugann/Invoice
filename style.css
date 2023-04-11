@@ -1,0 +1,21 @@
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .form {
+    margin-bottom: 20px;
+  }
+  
+  .invoice-items {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .total-amount {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  

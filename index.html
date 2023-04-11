@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Invoice App</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+ <!-- Add a container for the app -->
+<div class="container">
+    <h1>Invoice App</h1>
+    <form class="form">
+      <div class="form-group">
+        <label for="product">Product:</label>
+        <input type="text" id="product" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="price">Price:</label>
+        <input type="number" id="price" step="0.01" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="discount">Discount (%):</label>
+        <input type="number" id="discount" step="0.01" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="gst">GST (%):</label>
+        <input type="number" id="gst" step="0.01" class="form-control">
+      </div>
+      <button type="submit" class="btn btn-primary">Add Item</button>
+      <button class="btn btn-primary btn-generate-invoice" type="button">Generate Invoice</button>
+
+    </form>
+    <ul class="list-group invoice-items"></ul>
+    <div class="total-amount">Total Amount: $0.00</div>
+  </div>
+  
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.15/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
